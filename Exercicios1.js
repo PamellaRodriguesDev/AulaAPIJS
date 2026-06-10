@@ -3,6 +3,7 @@
 // const urlPosts =  'https://jsonplaceholder.typicode.com/posts/5'
 
 
+<<<<<<< HEAD:exercicio.js
 //  fetch(urlPosts) // Buscar a variavel na API 
 //  .then(resposta => { // aguarando a resposta
 //  if (resposta.ok) { // se for ok 
@@ -31,3 +32,17 @@
 //     .catch(error => { // caso nao de pra conectar na api da esse erro
 //         console.log('Falha na comunicação: A Promise foi rejeitada.')
 //     })
+=======
+ fetch(urlPosts) // Buscar a variavel na API 
+ .then(resposta => { // aguarando a resposta
+ if (resposta.ok) { // se for ok 
+       console.log('deu bom')
+     return resposta.json() //  retorna um json 
+    }
+    throw new Error('Erro ao conectar API') // caso a url esteja errada 
+  })
+  .then(posts => { // nome da variavel conforme exercicio
+    console.log(posts.title) 
+   console.log(posts.body)
+  })
+>>>>>>> cc8600b4a463364662b854b35c5341bc88124ca3:Exercicios1.js
